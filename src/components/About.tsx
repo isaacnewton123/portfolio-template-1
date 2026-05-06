@@ -1,6 +1,8 @@
 "use client";
 
+import { useState } from "react";
 import { useInView } from "@/hooks/useInView";
+import ResumeModal from "@/components/ResumeModal";
 
 /* Real brand SVG logos for each skill */
 const skills = [
@@ -87,6 +89,7 @@ export default function About() {
   const [headerRef, headerInView] = useInView(0.2);
   const [contentRef, contentInView] = useInView(0.1);
   const [skillsRef, skillsInView] = useInView(0.1);
+  const [resumeOpen, setResumeOpen] = useState(false);
 
   return (
     <section id="about" className="relative py-24 sm:py-32 lg:py-40 overflow-hidden">
@@ -121,17 +124,15 @@ export default function About() {
             </p>
           ))}
           <div className="pt-4">
-            <a
-              href="/assets/CV.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-semibold rounded-full bg-[var(--foreground)] text-[var(--background)] hover:bg-[var(--accent)] transition-all duration-300"
+            <button
+              onClick={() => setResumeOpen(true)}
+              className="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-semibold rounded-full bg-[var(--foreground)] text-[var(--background)] hover:bg-[var(--accent)] transition-all duration-300 cursor-pointer"
             >
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
               </svg>
-              Download CV
-            </a>
+              Download Resume
+            </button>
           </div>
         </div>
 
@@ -163,6 +164,7 @@ export default function About() {
           </div>
         </div>
       </div>
+      <ResumeModal open={resumeOpen} onClose={() => setResumeOpen(false)} />
     </section>
   );
 }

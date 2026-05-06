@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { useTheme } from "@/context/ThemeContext";
+import ResumeModal from "@/components/ResumeModal";
 
 const navLinks = [
   { label: "About", href: "#about" },
@@ -14,6 +15,7 @@ export default function Navbar() {
   const { theme, toggleTheme } = useTheme();
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [resumeOpen, setResumeOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 60);
@@ -53,17 +55,15 @@ export default function Navbar() {
               {link.label}
             </a>
           ))}
-          <a
-            href="/assets/CV.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-[13px] font-medium tracking-wide uppercase text-[var(--muted)] hover:text-[var(--foreground)] transition-colors duration-300 flex items-center gap-1.5"
+          <button
+            onClick={() => setResumeOpen(true)}
+            className="text-[13px] font-medium tracking-wide uppercase text-[var(--muted)] hover:text-[var(--foreground)] transition-colors duration-300 flex items-center gap-1.5 cursor-pointer"
           >
             Resume
             <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+              <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
             </svg>
-          </a>
+          </button>
 
           {/* Divider + Theme */}
           <div className="w-px h-5 bg-[var(--border-custom)]" />
@@ -126,20 +126,18 @@ export default function Navbar() {
               {link.label}
             </a>
           ))}
-          <a
-            href="/assets/CV.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={() => setMobileOpen(false)}
-            className="text-3xl font-light text-[var(--foreground)] hover:text-[var(--accent)] transition-all duration-300 flex items-center gap-2"
+          <button
+            onClick={() => { setMobileOpen(false); setResumeOpen(true); }}
+            className="text-3xl font-light text-[var(--foreground)] hover:text-[var(--accent)] transition-all duration-300 flex items-center gap-2 cursor-pointer"
           >
             Resume
             <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+              <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
             </svg>
-          </a>
+          </button>
         </div>
       </div>
+      <ResumeModal open={resumeOpen} onClose={() => setResumeOpen(false)} />
     </header>
   );
 }
