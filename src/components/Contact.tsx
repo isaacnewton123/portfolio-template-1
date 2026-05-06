@@ -49,9 +49,9 @@ export default function Contact() {
 
         {/* Email */}
         <div className={`transition-all duration-700 delay-500 ${inView ? "opacity-100" : "opacity-0"}`}>
-          <a href="mailto:hanif@isaacnewton.store" className="inline-flex items-center gap-2 text-sm text-[var(--muted)] hover:text-[var(--accent)] transition-colors duration-300">
+          <a href="mailto:hanifmaulana1997@gmail.com" className="inline-flex items-center gap-2 text-sm text-[var(--muted)] hover:text-[var(--accent)] transition-colors duration-300">
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" /></svg>
-            hanif@isaacnewton.store
+            hanifmaulana1997@gmail.com
           </a>
         </div>
       </div>
