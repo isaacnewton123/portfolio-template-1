@@ -6,12 +6,12 @@ const resumes = [
   {
     label: "English",
     flag: "🇬🇧",
-    href: "/assets/Resume_Hanif_Maulana_ENGLISH.pdf",
+    href: "/assets/Resume_Hanif_Maulana_EN.pdf",
   },
   {
     label: "Indonesian",
     flag: "🇮🇩",
-    href: "/assets/Resume_Hanif_Maulana_INDONESIA.pdf",
+    href: "/assets/Resume_Hanif_Maulana_ID.pdf",
   },
 ];
 
