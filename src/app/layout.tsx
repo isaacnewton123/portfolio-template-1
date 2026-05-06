@@ -45,11 +45,6 @@ export const metadata: Metadata = {
       "https://pbs.twimg.com/profile_images/1813811823050956800/iHOWSEHB_400x400.jpg",
     ],
   },
-  icons: {
-    icon: "https://pbs.twimg.com/profile_images/1813811823050956800/iHOWSEHB_400x400.jpg",
-    apple:
-      "https://pbs.twimg.com/profile_images/1813811823050956800/iHOWSEHB_400x400.jpg",
-  },
   metadataBase: new URL("https://isaacnewton.store"),
 };
 
@@ -62,6 +57,7 @@ export default function RootLayout({
     <html lang="en" className={`${inter.variable} antialiased`} suppressHydrationWarning>
       <head>
         <meta name="theme-color" content="#0a0f1a" />
+        <meta name="apple-mobile-web-app-title" content="Hanif Maulana Portfolio" />
         <script
           dangerouslySetInnerHTML={{
             __html: `
