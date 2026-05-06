@@ -11,7 +11,7 @@ const resumes = [
   {
     label: "Indonesian",
     flag: "🇮🇩",
-    href: "/assets/Resume_Hanif_Maulana_ENGLISH.pdf",
+    href: "/assets/Resume_Hanif_Maulana_INDONESIA.pdf",
   },
 ];
 
