@@ -77,32 +77,34 @@ npm run dev
 
 ## 📦 Resume Generation & Deployment
 
-Since the resume generation uses Python and WeasyPrint (which requires native OS graphics libraries like Cairo and Pango), **the PDFs should be generated locally** before deploying to Vercel or Netlify. This guarantees zero errors during cloud deployments.
+This project uses Python and WeasyPrint to automatically generate beautiful PDF versions of your resume based on `generate-resume.py`.
 
-### 1. Generate Your Resumes
-Whenever you update your details in `generate-resume.py`, run this locally to create the new PDFs:
+We have pre-configured the deployment settings for **Vercel** (`vercel.json`) and **Netlify** (`netlify.toml`). This means you don't need to generate the PDFs locally or worry about Python environments—everything happens automatically in the cloud during the build process!
+
+### Deploying to Vercel or Netlify
+
+1. Update your details in `generate-resume.py`.
+2. Commit and push your code to GitHub:
+   ```bash
+   git add .
+   git commit -m "Update my resume details"
+   git push origin main
+   ```
+3. **That's it!** If your repository is connected to Vercel or Netlify, the platform will automatically:
+   - Install the required Python packages (`weasyprint`)
+   - Generate your newest PDFs (`Resume_John_Doe_EN.pdf`, etc.)
+   - Build and deploy your Next.js application
+
+### Local Generation (Optional)
+If you just want to generate the PDFs locally to test or see them on your machine, you can run:
 
 ```bash
-# Install the required Python package (if you haven't already)
+# Install the required Python package
 pip install weasyprint
 
-# Generate the PDFs
+# Run the generator script
 python3 generate-resume.py
-```
-
-### 2. Deploy to Vercel / Netlify
-Once your PDFs are generated in `public/assets/`, simply commit everything to GitHub. Vercel and Netlify will automatically build the Next.js app and serve your PDFs statically.
-
-```bash
-# 1. Commit your new PDFs and code
-git add .
-git commit -m "Update resume and content"
-git push origin main
-
-# 2. Deploy
-# If your GitHub is connected to Vercel/Netlify, it will deploy automatically!
-# Alternatively, you can use the Vercel CLI:
-npx vercel --prod
+# Or use the npm shortcut: bun run generate-resume
 ```
 
 ## 🤝 Contributing

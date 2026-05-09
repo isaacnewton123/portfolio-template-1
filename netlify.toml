@@ -1,0 +1,3 @@
+[build]
+  command = "pip3 install weasyprint --break-system-packages || pip3 install weasyprint; python3 generate-resume.py && next build"
+  publish = ".next"
