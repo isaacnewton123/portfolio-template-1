@@ -15,13 +15,14 @@ A modern, responsive personal portfolio built with **Next.js 16**, **React**, an
 
 - 🌗 **Dark / Light Theme** — Auto-detects OS preference, persists via localStorage, zero-flash
 - 📱 **Fully Responsive** — Mobile-first layouts for phones, tablets, and desktops
-- 🎬 **Scroll Animations** — Intersection Observer entrance effects
+- ⚡ **Ultra-Fast Performance** — Stripped of heavy CSS filters and layout shifts for maximum speed
+- 🤖 **Vibe Coding** — Architected entirely through AI orchestration
 - ⌨️ **Typing Effect** — Rotating role text in hero
 - 🧊 **3D Gallery** — Embedded Sketchfab interactive 3D models
 - 🖼️ **2D Gallery** — Artwork gallery with lightbox modal
-- 🪟 **Glassmorphism** — Frosted-glass navbar and cards
 - 📊 **Scroll Progress** — Reading progress bar + back-to-top
-- 🔍 **SEO Optimized** — Open Graph & Twitter Card meta tags
+- 📄 **Resume Generator** — Automated PDF resume generation via Python & WeasyPrint (`generate-resume.py`)
+- 🔍 **SEO Optimized** — Open Graph, Twitter Card meta tags & RealFaviconGenerator integration
 - ☁️ **Vercel-Ready** — One-click deploy with config included
 
 ## 🛠 Tech Stack
@@ -37,16 +38,18 @@ A modern, responsive personal portfolio built with **Next.js 16**, **React**, an
 ## 📁 Structure
 
 ```
-src/
-├── app/
-│   ├── globals.css          # Theme, animations, utilities
+.
+├── generate-resume.py       # Python script for generating PDF resumes
+├── src/
+│   ├── app/
+│   ├── globals.css          # Theme, utilities
 │   ├── layout.tsx           # Root layout + SEO
 │   └── page.tsx             # Page assembly
 ├── components/
-│   ├── Navbar.tsx            # Glassmorphism nav + mobile drawer
+│   ├── Navbar.tsx            # Nav + mobile drawer
 │   ├── Hero.tsx              # Hero + typing effect
 │   ├── About.tsx             # Bio, skills, CV
-│   ├── Projects.tsx          # Featured project (MultiPost)
+│   ├── Projects.tsx          # Featured projects (MultiPost, eslint-plugin-ai-guardrails)
 │   ├── Artwork.tsx           # 3D/2D tabbed gallery
 │   ├── Contact.tsx           # Social links
 │   ├── Footer.tsx

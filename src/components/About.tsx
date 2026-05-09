@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { useInView } from "@/hooks/useInView";
 import ResumeModal from "@/components/ResumeModal";
 
 /* Real brand SVG logos for each skill */
@@ -79,28 +78,20 @@ const skills = [
 ];
 
 const paragraphs = [
-  "Efficiency is the highest form of professionalism. As a Full-Stack Developer, I design solutions with AI-augmented workflows — faster and more accurate than traditional methods.",
-  "My professional identity is synergy: my logic controls the architecture, AI executes efficiency. This eliminates repetitive technical barriers, allowing me to focus on product innovation, system scalability, and global-standard quality.",
-  "Beyond code, I bring 2D & 3D design to life — from visual identity and mascots to immersive 3D environments. I believe the perfect digital product is intelligent system architecture fused with deep visual experience.",
-  "I don't just offer technical skills — I offer the future of work: precision, speed, and impactful results.",
+  "I am an AI Enthusiast and AI Architect building solutions through Vibe Coding. I orchestrate AI to execute technical visions with high speed and precision, believing that AI is the ultimate tool for innovation.",
+  "My core focus is extreme efficiency. By relying on AI as my primary coding partner, I design complex architectures and Agentic Workflows that are production-ready in record time.",
+  "AI First Mentality: Always prioritizing intelligent automation and agentic workflows in every technical challenge.",
+  "Continuous Learning: Constantly pushing the boundaries of LLM capabilities to redefine how we interact with code."
 ];
 
 export default function About() {
-  const [headerRef, headerInView] = useInView(0.2);
-  const [contentRef, contentInView] = useInView(0.1);
-  const [skillsRef, skillsInView] = useInView(0.1);
   const [resumeOpen, setResumeOpen] = useState(false);
 
   return (
     <section id="about" className="relative py-24 sm:py-32 lg:py-40 overflow-hidden">
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full bg-[var(--accent)]/[0.02] blur-[200px]" />
-
       <div className="max-w-6xl mx-auto px-6">
         {/* Header */}
-        <div
-          ref={headerRef as React.RefObject<HTMLDivElement>}
-          className={`mb-14 sm:mb-20 transition-all duration-700 ${headerInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
-        >
+        <div className="mb-14 sm:mb-20">
           <div className="flex items-center justify-center gap-4 mb-6">
             <div className="accent-line" />
             <span className="text-xs font-medium tracking-[0.2em] uppercase text-[var(--accent)]">About</span>
@@ -114,10 +105,7 @@ export default function About() {
         </div>
 
         {/* Text content */}
-        <div
-          ref={contentRef as React.RefObject<HTMLDivElement>}
-          className={`max-w-3xl mx-auto text-center space-y-5 mb-16 sm:mb-20 transition-all duration-700 delay-100 ${contentInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
-        >
+        <div className="max-w-3xl mx-auto text-center space-y-5 mb-16 sm:mb-20">
           {paragraphs.map((p, i) => (
             <p key={i} className="text-sm sm:text-base leading-[1.85] text-[var(--muted)]">
               {p}
@@ -137,20 +125,12 @@ export default function About() {
         </div>
 
         {/* Skills with logos */}
-        <div
-          ref={skillsRef as React.RefObject<HTMLDivElement>}
-          className={`transition-all duration-700 delay-200 ${skillsInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
-        >
+        <div>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4">
             {skills.map((skill, i) => (
               <div
                 key={skill.name}
                 className="bento-item flex flex-col items-center text-center gap-3 p-5 sm:p-6 group"
-                style={{
-                  opacity: skillsInView ? 1 : 0,
-                  transform: skillsInView ? "translateY(0)" : "translateY(16px)",
-                  transition: `all 0.5s ease ${i * 60}ms`,
-                }}
               >
                 <div className="text-[var(--accent)] group-hover:scale-110 transition-transform duration-300">
                   {skill.logo}

@@ -6,12 +6,12 @@ const resumes = [
   {
     label: "English",
     flag: "🇬🇧",
-    href: "/assets/Resume_Hanif_Maulana_EN.pdf",
+    href: "/assets/Resume_Hanif_Maulana_EN_v1.0.1.pdf",
   },
   {
     label: "Indonesian",
     flag: "🇮🇩",
-    href: "/assets/Resume_Hanif_Maulana_ID.pdf",
+    href: "/assets/Resume_Hanif_Maulana_ID_v1.0.1.pdf",
   },
 ];
 
@@ -44,11 +44,11 @@ export default function ResumeModal({
       onClick={onClose}
     >
       {/* Backdrop */}
-      <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
+      <div className="absolute inset-0 bg-black/80" />
 
       {/* Modal */}
       <div
-        className="relative w-full max-w-sm rounded-2xl bg-[var(--surface)] border border-[var(--border-custom)] shadow-2xl overflow-hidden animate-[fadeInUp_0.3s_ease-out]"
+        className="relative w-full max-w-sm rounded-2xl bg-[var(--surface)] border border-[var(--border-custom)] shadow-2xl overflow-hidden"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Top accent */}

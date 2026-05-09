@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { useInView } from "@/hooks/useInView";
 
 const models3D = [
   { id: "866eb6a0df8d491fb7e98d1bf7fa2a5e", title: "Speaker", desc: "Railroad crossing warning speaker" },
@@ -21,15 +20,11 @@ const art2D = [
 export default function Artwork() {
   const [tab, setTab] = useState<"3d" | "2d">("3d");
   const [lightbox, setLightbox] = useState<string | null>(null);
-  const [hRef, hIn] = useInView(0.2);
-  const [gRef, gIn] = useInView(0.05);
 
   return (
     <section id="artwork" className="relative py-32 lg:py-40 overflow-hidden">
-      <div className="absolute top-1/3 left-0 w-[400px] h-[400px] rounded-full bg-[var(--gradient-start)]/[0.03] blur-[150px]" />
-
       <div className="max-w-6xl mx-auto px-6">
-        <div ref={hRef as React.RefObject<HTMLDivElement>} className={`mb-16 transition-all duration-700 ${hIn ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
+        <div className="mb-16">
           <div className="flex items-center justify-center gap-4 mb-6">
             <div className="accent-line" />
             <span className="text-xs font-medium tracking-[0.2em] uppercase text-[var(--accent)]">Gallery</span>
@@ -51,11 +46,11 @@ export default function Artwork() {
           </div>
         </div>
 
-        <div ref={gRef as React.RefObject<HTMLDivElement>}>
+        <div>
           {tab === "3d" && (
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
               {models3D.map((m, i) => (
-                <div key={m.id} className="bento-item p-0 overflow-hidden" style={{ opacity: gIn ? 1 : 0, transform: gIn ? "translateY(0)" : "translateY(20px)", transition: `all 0.5s ease ${i * 80}ms` }}>
+                <div key={m.id} className="bento-item p-0 overflow-hidden">
                   <div className="sketchfab-wrapper">
                     <iframe title={m.title} allowFullScreen allow="autoplay; fullscreen; xr-spatial-tracking" src={`https://sketchfab.com/models/${m.id}/embed`} />
                   </div>
@@ -71,7 +66,7 @@ export default function Artwork() {
           {tab === "2d" && (
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
               {art2D.map((a, i) => (
-                <div key={a.src} className="bento-item p-0 overflow-hidden cursor-pointer group" onClick={() => setLightbox(a.src)} style={{ opacity: gIn ? 1 : 0, transform: gIn ? "translateY(0)" : "translateY(20px)", transition: `all 0.5s ease ${i * 80}ms` }}>
+                <div key={a.src} className="bento-item p-0 overflow-hidden cursor-pointer group" onClick={() => setLightbox(a.src)}>
                   <div className="relative aspect-[4/3] overflow-hidden">
                     <Image src={a.src} alt={a.title} fill className="object-cover group-hover:scale-110 transition-transform duration-700" unoptimized={a.src.endsWith(".gif")} />
                     <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-300 flex items-center justify-center">
@@ -93,7 +88,7 @@ export default function Artwork() {
 
       {/* Lightbox */}
       {lightbox && (
-        <div className="fixed inset-0 z-[100] bg-black/85 backdrop-blur-sm flex items-center justify-center p-6 cursor-pointer" onClick={() => setLightbox(null)}>
+        <div className="fixed inset-0 z-[100] bg-black/85 flex items-center justify-center p-6 cursor-pointer" onClick={() => setLightbox(null)}>
           <button className="absolute top-6 right-6 w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors" onClick={() => setLightbox(null)} aria-label="Close">
             <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
           </button>

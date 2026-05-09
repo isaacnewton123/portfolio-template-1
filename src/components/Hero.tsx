@@ -2,12 +2,10 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import { useInView } from "@/hooks/useInView";
 
-const words = ["Full-Stack Developer", "AI-Augmented Builder", "3D & 2D Designer", "System Architect"];
+const words = ["AI Enthusiast", "AI Architect", "Vibe Coder", "LLM Orchestrator"];
 
 export default function Hero() {
-  const [ref, isInView] = useInView(0.05);
   const [wordIdx, setWordIdx] = useState(0);
   const [fade, setFade] = useState(true);
 
@@ -17,7 +15,7 @@ export default function Hero() {
       setTimeout(() => {
         setWordIdx((i) => (i + 1) % words.length);
         setFade(true);
-      }, 400);
+      }, 300);
     }, 3000);
     return () => clearInterval(interval);
   }, []);
@@ -25,13 +23,8 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      ref={ref as React.RefObject<HTMLElement>}
-      className="relative min-h-screen flex items-center overflow-hidden noise"
+      className="relative min-h-screen flex items-center overflow-hidden"
     >
-      {/* Ambient orbs — hidden on small screens to avoid overflow */}
-      <div className="hidden sm:block absolute top-[-20%] right-[-10%] w-[500px] h-[500px] rounded-full bg-[var(--gradient-start)]/[0.07] blur-[150px] animate-pulse-glow" />
-      <div className="hidden sm:block absolute bottom-[-20%] left-[-10%] w-[400px] h-[400px] rounded-full bg-[var(--gradient-end)]/[0.05] blur-[120px]" />
-
       {/* Grid overlay */}
       <div className="absolute inset-0 opacity-[0.03]" style={{
         backgroundImage: `linear-gradient(var(--foreground) 1px, transparent 1px), linear-gradient(90deg, var(--foreground) 1px, transparent 1px)`,
@@ -42,10 +35,7 @@ export default function Hero() {
         <div className="flex flex-col lg:grid lg:grid-cols-12 gap-10 lg:gap-8 items-center lg:min-h-screen lg:py-32">
 
           {/* Photo — mobile first (shown above text on mobile) */}
-          <div
-            className={`lg:hidden w-full flex justify-center transition-all duration-1000 ${isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-              }`}
-          >
+          <div className="lg:hidden w-full flex justify-center">
             <div className="relative w-48 h-56 sm:w-56 sm:h-64 rounded-2xl overflow-hidden">
               <Image
                 src="/assets/hanifmaulana.webp"
@@ -59,14 +49,10 @@ export default function Hero() {
           </div>
 
           {/* Text — 7 cols on desktop */}
-          <div
-            className={`lg:col-span-7 space-y-5 sm:space-y-7 text-center lg:text-left transition-all duration-1000 delay-100 ${isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-              }`}
-          >
+          <div className="lg:col-span-7 space-y-5 sm:space-y-7 text-center lg:text-left">
             {/* Status */}
             <div className="flex items-center justify-center lg:justify-start gap-3">
               <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[var(--accent)] opacity-75" />
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-[var(--accent)]" />
               </span>
               <span className="text-[10px] sm:text-xs font-medium tracking-[0.2em] uppercase text-[var(--muted)]">
@@ -84,17 +70,14 @@ export default function Hero() {
             {/* Rotating role */}
             <div className="flex items-center justify-center lg:justify-start gap-3">
               <div className="accent-line hidden sm:block" />
-              <p
-                className={`text-sm sm:text-base font-medium text-[var(--accent)] transition-all duration-400 ${fade ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2"
-                  }`}
-              >
+              <p className={`text-sm sm:text-base font-medium text-[var(--accent)] transition-all duration-300 ${fade ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2"}`}>
                 {words[wordIdx]}
               </p>
             </div>
 
             {/* Tagline */}
             <p className="text-sm sm:text-base lg:text-lg text-[var(--muted)] leading-relaxed max-w-xl mx-auto lg:mx-0">
-              The Next-Gen Developer: Human Intelligence, AI Efficiency &amp; Immersive Visuals.
+              I orchestrate AI to execute technical visions with high speed and precision, building solutions through Vibe Coding.
             </p>
 
             {/* CTAs */}
@@ -118,13 +101,9 @@ export default function Hero() {
           </div>
 
           {/* Photo — desktop only (right side) */}
-          <div
-            className={`hidden lg:flex lg:col-span-5 justify-end transition-all duration-1000 delay-300 ${isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-              }`}
-          >
+          <div className="hidden lg:flex lg:col-span-5 justify-end">
             <div className="relative">
               {/* Decorative rings */}
-              <div className="absolute -inset-3 rounded-[2rem] border border-[var(--accent)]/10 animate-float" />
               <div className="absolute -inset-6 rounded-[2.5rem] border border-[var(--accent)]/5" />
 
               <div className="relative w-[320px] h-[420px] rounded-[1.5rem] overflow-hidden">
@@ -132,7 +111,7 @@ export default function Hero() {
                   src="/assets/hanifmaulana.webp"
                   alt="Hanif Maulana"
                   fill
-                  className="object-cover object-top grayscale hover:grayscale-0 transition-all duration-700"
+                  className="object-cover object-top transition-all duration-700"
                   priority
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[var(--background)] via-transparent to-transparent opacity-60" />

@@ -113,7 +113,7 @@ export default function Navbar() {
 
       {/* Mobile overlay */}
       <div className={`md:hidden fixed inset-0 z-40 transition-all duration-500 ${mobileOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}`}>
-        <div className="absolute inset-0 bg-[var(--background)]/95 backdrop-blur-xl" onClick={() => setMobileOpen(false)} />
+        <div className="absolute inset-0 bg-[var(--background)]/95" onClick={() => setMobileOpen(false)} />
         <div className="relative z-10 flex flex-col items-center justify-center h-full gap-8">
           {navLinks.map((link, i) => (
             <a

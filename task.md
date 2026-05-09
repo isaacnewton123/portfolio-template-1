@@ -10,7 +10,7 @@
 - [/] Build Projects component
 - [/] Build Artwork component
 - [/] Build Contact component
-- [ ] Build Footer component
-- [ ] Build ScrollProgress component
-- [ ] Assemble page.tsx & layout.tsx
-- [ ] Verify build & dev server
+- [/] Build Footer component
+- [/] Build ScrollProgress component
+- [/] Assemble page.tsx & layout.tsx
+- [/] Verify build & dev server
