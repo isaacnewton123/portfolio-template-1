@@ -64,7 +64,7 @@ A modern, responsive personal portfolio built with **Next.js 16**, **React**, an
 
 ```bash
 # Clone
-git clone https://github.com/isaacnewton123/portfolio.git
+git clone https://github.com/isaacnewton123/portfolio-template-1.git
 cd portfolio
 
 # Install
