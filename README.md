@@ -96,6 +96,13 @@ Contributions are welcome! Feel free to:
 4. Push to branch (`git push origin feature/amazing`)
 5. Open a Pull Request
 
+## 💖 Support
+
+If you found this project helpful, consider supporting:
+
+- **Ko-fi**: [ko-fi.com/isaacnewton1](https://ko-fi.com/isaacnewton1)
+- **Trakteer**: [trakteer.id/isaacnewton1/link](https://trakteer.id/isaacnewton1/link)
+
 ## 📝 License
 
 This project is open source under the [MIT License](LICENSE).
