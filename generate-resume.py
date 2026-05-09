@@ -80,13 +80,13 @@ def generate_clean_resume(lang="en"):
     <body>
         <div class="container">
             <div class="sidebar">
-                <div class="name">John Doe</div>
+                <div class="name">Isaac Newton</div>
                 <div class="job-title">Software Engineer</div>
                 
                 <h2>{contact_text}</h2>
                 <div class="contact-item">
                     <span class="contact-label">Email</span>
-                    <a href="mailto:hello@johndoe.com">hello@johndoe.com</a>
+                    <a href="mailto:hello@isaacnewton.com">hello@isaacnewton.com</a>
                 </div>
                 <div class="contact-item">
                     <span class="contact-label">Phone</span>
@@ -94,7 +94,7 @@ def generate_clean_resume(lang="en"):
                 </div>
                 <div class="contact-item">
                     <span class="contact-label">Digital Presence</span>
-                    <a href="https://johndoe.com">johndoe.com</a>
+                    <a href="https://isaacnewton.com">isaacnewton.com</a>
                 </div>
                 <div class="contact-item">
                     <span class="contact-label">Source Code</span>
@@ -139,7 +139,7 @@ def generate_clean_resume(lang="en"):
                 <div class="summary-box">
                     <p>Synergy between human vision and technical execution in creating smart visual and functional assets.</p>
                     <p style="text-align: center; margin-top: 10pt;">
-                        <a href="https://johndoe.com/#artwork" class="highlight" style="text-decoration: underline; display: inline;">Explore My Work</a>
+                        <a href="https://isaacnewton.com/#artwork" class="highlight" style="text-decoration: underline; display: inline;">Explore My Work</a>
                     </p>
                 </div>
 
@@ -157,5 +157,5 @@ def generate_clean_resume(lang="en"):
     return html
 
 # Exporting clean PDFs
-HTML(string=generate_clean_resume("id")).write_pdf("public/assets/Resume_John_Doe_ID.pdf")
-HTML(string=generate_clean_resume("en")).write_pdf("public/assets/Resume_John_Doe_EN.pdf")
+HTML(string=generate_clean_resume("id")).write_pdf("public/assets/Resume_Isaac_Newton_ID.pdf")
+HTML(string=generate_clean_resume("en")).write_pdf("public/assets/Resume_Isaac_Newton_EN.pdf")

@@ -29,9 +29,8 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-700 ${
-        scrolled ? "glass py-4" : "bg-transparent py-6"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-700 ${scrolled ? "glass py-4" : "bg-transparent py-6"
+        }`}
     >
       <div className="max-w-6xl mx-auto px-6 flex items-center justify-between">
         {/* Logo mark */}
@@ -40,7 +39,7 @@ export default function Navbar() {
             J
           </div>
           <span className={`text-sm font-semibold tracking-wide transition-all duration-500 ${scrolled ? "text-[var(--foreground)]" : "text-[var(--foreground)]/80"}`}>
-            John Doe
+            Isaac Newton
           </span>
         </a>
 

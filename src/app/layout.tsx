@@ -9,11 +9,11 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "John Doe | The Next-Gen Developer",
+  title: "Isaac Newton | The Next-Gen Developer",
   description:
-    "Portfolio of John Doe – Full-Stack Developer specializing in AI-augmented workflows, 2D & 3D design, and immersive digital experiences.",
+    "Portfolio of Isaac Newton – Full-Stack Developer specializing in AI-augmented workflows, 2D & 3D design, and immersive digital experiences.",
   keywords: [
-    "John Doe",
+    "Isaac Newton",
     "Full-Stack Developer",
     "AI-assisted development",
     "3D modeling",
@@ -21,10 +21,10 @@ export const metadata: Metadata = {
     "portfolio",
     "MultiPost",
   ],
-  authors: [{ name: "John Doe" }],
+  authors: [{ name: "Isaac Newton" }],
   openGraph: {
     type: "website",
-    title: "John Doe | The Next-Gen Developer",
+    title: "Isaac Newton | The Next-Gen Developer",
     description:
       "Full-Stack Developer: Human Intelligence, AI Efficiency & Immersive Visuals.",
     url: "https://isaacnewton.store",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "John Doe | The Next-Gen Developer",
+    title: "Isaac Newton | The Next-Gen Developer",
     description:
       "Full-Stack Developer: Human Intelligence, AI Efficiency & Immersive Visuals.",
     images: [
@@ -57,7 +57,7 @@ export default function RootLayout({
     <html lang="en" className={`${inter.variable} antialiased`} suppressHydrationWarning>
       <head>
         <meta name="theme-color" content="#0a0f1a" />
-        <meta name="apple-mobile-web-app-title" content="John Doe Portfolio" />
+        <meta name="apple-mobile-web-app-title" content="Isaac Newton Portfolio" />
         <script
           dangerouslySetInnerHTML={{
             __html: `

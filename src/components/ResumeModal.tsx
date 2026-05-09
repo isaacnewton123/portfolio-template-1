@@ -6,12 +6,12 @@ const resumes = [
   {
     label: "English",
     flag: "🇬🇧",
-    href: "/assets/Resume_John_Doe_EN.pdf",
+    href: "/assets/Resume_Isaac_Newton_EN.pdf",
   },
   {
     label: "Indonesian",
     flag: "🇮🇩",
-    href: "/assets/Resume_John_Doe_ID.pdf",
+    href: "/assets/Resume_Isaac_Newton_ID.pdf",
   },
 ];
 
