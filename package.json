@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "generate-resume": "python3 generate-resume.py",
     "build": "next build",
     "start": "next start",
     "lint": "eslint"

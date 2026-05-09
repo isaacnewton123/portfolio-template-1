@@ -75,14 +75,33 @@ npm run dev
 # → http://localhost:3000
 ```
 
-## 📦 Build & Deploy
+## 📦 Resume Generation & Deployment
+
+Since the resume generation uses Python and WeasyPrint (which requires native OS graphics libraries like Cairo and Pango), **the PDFs should be generated locally** before deploying to Vercel or Netlify. This guarantees zero errors during cloud deployments.
+
+### 1. Generate Your Resumes
+Whenever you update your details in `generate-resume.py`, run this locally to create the new PDFs:
 
 ```bash
-# Production build
-npm run build
-npm start
+# Install the required Python package (if you haven't already)
+pip install weasyprint
 
-# Deploy to Vercel
+# Generate the PDFs
+python3 generate-resume.py
+```
+
+### 2. Deploy to Vercel / Netlify
+Once your PDFs are generated in `public/assets/`, simply commit everything to GitHub. Vercel and Netlify will automatically build the Next.js app and serve your PDFs statically.
+
+```bash
+# 1. Commit your new PDFs and code
+git add .
+git commit -m "Update resume and content"
+git push origin main
+
+# 2. Deploy
+# If your GitHub is connected to Vercel/Netlify, it will deploy automatically!
+# Alternatively, you can use the Vercel CLI:
 npx vercel --prod
 ```
 
