@@ -1,8 +1,8 @@
-# 🚀 Hanif Maulana — Portfolio
+# 🚀 Next.js Portfolio Template
 
 A modern, responsive personal portfolio built with **Next.js 16**, **React**, and **Tailwind CSS v4**.
 
-🔗 **Live:** [isaacnewton.store](https://isaacnewton.store)
+🔗 **Live Demo:** [Demo Link](#)
 
 ![Next.js](https://img.shields.io/badge/Next.js-16-black?logo=next.js)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript)
@@ -109,4 +109,4 @@ This project is open source under the [MIT License](LICENSE).
 
 ---
 
-Made with ❤️ by [Hanif Maulana](https://isaacnewton.store)
+Made with ❤️ by [Hanif Maulana](https://github.com/isaacnewton123)

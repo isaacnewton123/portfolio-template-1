@@ -11,43 +11,43 @@ def generate_clean_resume(lang="en"):
     enthusiasm_text = "Future Tech Mindset" if is_id else "Future Tech Mindset"
     
     if is_id:
-        about_p1 = "Saya adalah seorang <span class='highlight'>AI Enthusiast</span> dan <span class='highlight'>AI Architect</span> yang percaya bahwa kecerdasan buatan adalah katalisator utama bagi kreativitas manusia tak terbatas. Saya membangun solusi masa depan melalui metode <span class='highlight'>Vibe Coding</span>, memandu AI untuk mewujudkan arsitektur yang presisi dan efisien secara radikal."
-        about_p2 = "Fokus utama saya adalah efisiensi ekstrem. Dengan menguasai orkestrasi LLM, saya memastikan bahwa setiap produk yang saya bangun—seperti MultiPost—memiliki pondasi AI yang kuat sejak hari pertama untuk mencapai hasil maksimal."
+        about_p1 = "Saya adalah seorang <span class='highlight'>Software Engineer</span> dan <span class='highlight'>Architect</span> yang berdedikasi untuk membangun solusi digital yang efisien dan dapat diskalakan. Saya senang memecahkan tantangan teknis yang kompleks dan mengubah ide menjadi kenyataan."
+        about_p2 = "Fokus utama saya adalah menciptakan pengalaman pengguna yang mulus dan arsitektur backend yang tangguh. Dengan memanfaatkan teknologi web modern, saya memastikan setiap produk memiliki performa tinggi."
         enthusiasm_li = [
-            "<strong>AI First Mentality:</strong> Selalu memprioritaskan automasi cerdas dan alur kerja berbasis agen dalam setiap tantangan teknis.",
-            "<strong>Continuous Evolution:</strong> Terus mengeksplorasi batas-batas kemampuan LLM untuk mengubah cara kita berinteraksi dengan dunia digital."
+            "<strong>Design First Mentality:</strong> Selalu memprioritaskan kode yang bersih, antarmuka intuitif, dan desain responsif.",
+            "<strong>Continuous Learning:</strong> Terus mengeksplorasi framework dan alat baru untuk tetap unggul di industri teknologi."
         ]
-        project_role = "Vibe Coder & AI Architect"
-        project_li = ["<strong>MultiPost:</strong> Dibangun sepenuhnya dengan metode vibe-coding, mengandalkan AI untuk distribusi konten lintas platform secara otomatis.",
-                      "Implementasi backend menggunakan Bun dan Elysia yang dioptimalkan melalui instruksi AI real-time.",
-                      "Otomatisasi alur kerja dari ide hingga deployment hanya dengan orkestrasi model bahasa."]
-        project2_name = "eslint-plugin-ai-guardrails"
-        project2_link = "eslint-ai-guardrails.vercel.app"
-        project2_url = "https://eslint-ai-guardrails.vercel.app"
-        project2_role = "Vibe Coder & Creator"
-        project2_li = ["Dibangun sepenuhnya menggunakan full vibe coding (coding dengan AI).",
-                       "Aturan linting khusus untuk mendeteksi kode AI yang rentan tech debt.",
-                       "Mencegah file monolitik dan komentar reduksan yang sering dihasilkan AI."]
-        footer_quote = '"Membangun masa depan melalui vibrasi kode dan kecerdasan buatan."'
+        project_role = "Lead Developer & Architect"
+        project_li = ["<strong>Project Alpha:</strong> Platform SaaS modern dengan dashboard canggih dan analitik real-time.",
+                      "Implementasi backend menggunakan teknologi terbaru yang dioptimalkan.",
+                      "Otomatisasi alur kerja dari ide hingga deployment."]
+        project2_name = "Project Beta"
+        project2_link = "project-beta.vercel.app"
+        project2_url = "https://project-beta.vercel.app"
+        project2_role = "Creator & Maintainer"
+        project2_li = ["Proyek open-source untuk meningkatkan produktivitas pengembang.",
+                       "Fokus pada performa dan kemudahan pemeliharaan.",
+                       "Mencegah tech debt melalui tooling yang lebih baik."]
+        footer_quote = '"Membangun masa depan melalui kode yang bersih dan solusi inovatif."'
     else:
-        about_p1 = "I am an <span class='highlight'>AI Enthusiast</span> and <span class='highlight'>AI Architect</span> building solutions through <span class='highlight'>Vibe Coding</span>. I orchestrate AI to execute technical visions with high speed and precision, believing that AI is the ultimate tool for innovation."
-        about_p2 = "My core focus is extreme efficiency. By relying on AI as my primary coding partner, I design complex architectures and Agentic Workflows that are production-ready in record time."
+        about_p1 = "I am a passionate <span class='highlight'>Software Engineer</span> and <span class='highlight'>Architect</span> dedicated to building scalable and efficient digital solutions. I thrive on solving complex technical challenges."
+        about_p2 = "My core focus is on creating seamless user experiences and robust backend architectures. By utilizing modern web technologies, I ensure high performance."
         enthusiasm_li = [
-            "<strong>AI First Mentality:</strong> Always prioritizing intelligent automation and agentic workflows in every technical challenge.",
-            "<strong>Continuous Learning:</strong> Constantly pushing the boundaries of LLM capabilities to redefine how we interact with code."
+            "<strong>Design First Mentality:</strong> Always prioritizing clean code, intuitive interfaces, and responsive design.",
+            "<strong>Continuous Learning:</strong> Constantly exploring new frameworks and tools to stay ahead of the curve."
         ]
-        project_role = "Vibe Coder & AI Architect"
-        project_li = ["<strong>MultiPost:</strong> Built entirely using vibe-coding methods, relying on AI for automated cross-platform content distribution.",
-                      "Implemented backend using Bun and Elysia, optimized through real-time AI prompting.",
-                      "Automated the workflow from idea to deployment solely through language model orchestration."]
-        project2_name = "eslint-plugin-ai-guardrails"
-        project2_link = "eslint-ai-guardrails.vercel.app"
-        project2_url = "https://eslint-ai-guardrails.vercel.app"
-        project2_role = "Vibe Coder & Creator"
-        project2_li = ["Built entirely using full vibe coding (coding with AI).",
-                       "Custom linting rules to detect AI-generated code prone to tech debt.",
-                       "Prevents monolithic files and redundant comments typically produced by AI coding tools."]
-        footer_quote = '"Building the future through code vibrations and artificial intelligence."'
+        project_role = "Lead Developer & Architect"
+        project_li = ["<strong>Project Alpha:</strong> A modern SaaS platform with an advanced dashboard and real-time analytics.",
+                      "Implemented robust backend architectures for scale.",
+                      "Automated workflow from idea to deployment."]
+        project2_name = "Project Beta"
+        project2_link = "project-beta.vercel.app"
+        project2_url = "https://project-beta.vercel.app"
+        project2_role = "Creator & Maintainer"
+        project2_li = ["An open-source project aimed at improving developer productivity.",
+                       "Built with performance and maintainability in mind.",
+                       "Prevents tech debt through better developer tooling."]
+        footer_quote = '"Building the future through clean code and innovative solutions."'
 
     html = f"""
     <!DOCTYPE html>
@@ -80,21 +80,21 @@ def generate_clean_resume(lang="en"):
     <body>
         <div class="container">
             <div class="sidebar">
-                <div class="name">Hanif Maulana</div>
-                <div class="job-title">AI Enthusiast & Architect</div>
+                <div class="name">John Doe</div>
+                <div class="job-title">Software Engineer</div>
                 
                 <h2>{contact_text}</h2>
                 <div class="contact-item">
                     <span class="contact-label">Email</span>
-                    <a href="mailto:hanifmaulana1997@gmail.com">hanifmaulana1997@gmail.com</a>
+                    <a href="mailto:hello@johndoe.com">hello@johndoe.com</a>
                 </div>
                 <div class="contact-item">
                     <span class="contact-label">Phone</span>
-                    <a href="tel:+6283117772744">+6283117772744</a>
+                    <a href="tel:+1234567890">+1234567890</a>
                 </div>
                 <div class="contact-item">
                     <span class="contact-label">Digital Presence</span>
-                    <a href="https://hanifmaulana-portfolio.vercel.app">hanifmaulana-portfolio.vercel.app</a>
+                    <a href="https://johndoe.com">johndoe.com</a>
                 </div>
                 <div class="contact-item">
                     <span class="contact-label">Source Code</span>
@@ -105,12 +105,12 @@ def generate_clean_resume(lang="en"):
                 {"".join(f'<div class="enthusiasm-item">{item}</div>' for item in enthusiasm_li)}
 
                 <h2>{skills_text}</h2>
-                <div class="skill-tag">AI Enthusiast</div>
-                <div class="skill-tag">Vibe Coding</div>
-                <div class="skill-tag">LLM Orchestration</div>
-                <div class="skill-tag">Bun / Elysia</div>
-                <div class="skill-tag">Next.js</div>
-                <div class="skill-tag">Prompt Engineering</div>
+                <div class="skill-tag">Software Engineering</div>
+                <div class="skill-tag">Web Development</div>
+                <div class="skill-tag">React / Next.js</div>
+                <div class="skill-tag">TypeScript</div>
+                <div class="skill-tag">Node.js</div>
+                <div class="skill-tag">Architecture</div>
             </div>
             
             <div class="main-content">
@@ -137,9 +137,9 @@ def generate_clean_resume(lang="en"):
 
                 <h2>{portfolio_text}</h2>
                 <div class="summary-box">
-                    <p>Sinergi antara visi manusia dan eksekusi AI dalam menciptakan aset visual dan fungsional cerdas.</p>
+                    <p>Synergy between human vision and technical execution in creating smart visual and functional assets.</p>
                     <p style="text-align: center; margin-top: 10pt;">
-                        <a href="https://hanifmaulana-portfolio.vercel.app/#artwork" class="highlight" style="text-decoration: underline; display: inline;">Explore AI-Enhanced Art</a>
+                        <a href="https://johndoe.com/#artwork" class="highlight" style="text-decoration: underline; display: inline;">Explore My Work</a>
                     </p>
                 </div>
 
@@ -157,5 +157,5 @@ def generate_clean_resume(lang="en"):
     return html
 
 # Exporting clean PDFs
-HTML(string=generate_clean_resume("id")).write_pdf("public/assets/Resume_Hanif_Maulana_ID_v1.0.1.pdf")
-HTML(string=generate_clean_resume("en")).write_pdf("public/assets/Resume_Hanif_Maulana_EN_v1.0.1.pdf")
+HTML(string=generate_clean_resume("id")).write_pdf("public/assets/Resume_John_Doe_ID.pdf")
+HTML(string=generate_clean_resume("en")).write_pdf("public/assets/Resume_John_Doe_EN.pdf")

@@ -4,23 +4,23 @@ import Image from "next/image";
 
 const projects = [
   {
-    id: "multipost",
-    title: "MultiPost",
-    url: "multipost.pro",
-    link: "https://multipost.pro",
+    id: "project-one",
+    title: "Project Alpha",
+    url: "project-alpha.com",
+    link: "#",
     status: "Live · SaaS Platform",
-    description: "Built entirely with full vibe coding (coding with AI). MultiPost provides an advanced platform for managing and uploading content to multiple social media platforms simultaneously.",
-    tags: ["Vibe Coding", "Social Media", "Automation", "SaaS"],
+    description: "A modern SaaS platform built with the latest technologies. Features include an advanced dashboard, real-time analytics, and seamless integrations.",
+    tags: ["React", "Next.js", "Tailwind CSS", "SaaS"],
     image: "/assets/multipost-logo.webp",
   },
   {
-    id: "ai-guardrails",
-    title: "eslint-plugin-ai-guardrails",
-    url: "eslint-ai-guardrails.vercel.app",
-    link: "https://eslint-ai-guardrails.vercel.app/",
+    id: "project-two",
+    title: "Project Beta",
+    url: "project-beta.vercel.app",
+    link: "#",
     status: "Live · Open Source",
-    description: "Built entirely with full vibe coding (coding with AI). Stop AI-generated code from becoming long-term tech debt. eslint-plugin-ai-guardrails enforces structure-first linting rules.",
-    tags: ["Vibe Coding", "ESLint", "TypeScript", "AI"],
+    description: "An open-source tool designed to improve developer productivity. Built with performance and maintainability in mind.",
+    tags: ["TypeScript", "Tooling", "Open Source", "Library"],
     image: "/assets/ai-guardrails-logo.webp",
   }
 ];

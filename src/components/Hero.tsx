@@ -39,7 +39,7 @@ export default function Hero() {
             <div className="relative w-48 h-56 sm:w-56 sm:h-64 rounded-2xl overflow-hidden">
               <Image
                 src="/assets/hanifmaulana.webp"
-                alt="Hanif Maulana"
+                alt="John Doe"
                 fill
                 className="object-cover object-top"
                 priority
@@ -62,9 +62,9 @@ export default function Hero() {
 
             {/* Name */}
             <h1 className="text-4xl sm:text-5xl lg:text-[clamp(3.5rem,5.5vw,5rem)] font-bold leading-[1.1] tracking-[-0.03em]">
-              <span className="text-[var(--foreground)]">Hanif</span>
+              <span className="text-[var(--foreground)]">John</span>
               <br />
-              <span className="gradient-text">Maulana</span>
+              <span className="gradient-text">Doe</span>
             </h1>
 
             {/* Rotating role */}
@@ -109,7 +109,7 @@ export default function Hero() {
               <div className="relative w-[320px] h-[420px] rounded-[1.5rem] overflow-hidden">
                 <Image
                   src="/assets/hanifmaulana.webp"
-                  alt="Hanif Maulana"
+                  alt="John Doe"
                   fill
                   className="object-cover object-top transition-all duration-700"
                   priority

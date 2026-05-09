@@ -78,10 +78,10 @@ const skills = [
 ];
 
 const paragraphs = [
-  "I am an AI Enthusiast and AI Architect building solutions through Vibe Coding. I orchestrate AI to execute technical visions with high speed and precision, believing that AI is the ultimate tool for innovation.",
-  "My core focus is extreme efficiency. By relying on AI as my primary coding partner, I design complex architectures and Agentic Workflows that are production-ready in record time.",
-  "AI First Mentality: Always prioritizing intelligent automation and agentic workflows in every technical challenge.",
-  "Continuous Learning: Constantly pushing the boundaries of LLM capabilities to redefine how we interact with code."
+  "I am a passionate software engineer and architect dedicated to building scalable and efficient digital solutions. I thrive on solving complex technical challenges and turning ideas into reality.",
+  "My core focus is on creating seamless user experiences and robust backend architectures. By utilizing modern web technologies, I ensure that every product I build is highly performant and production-ready.",
+  "Design First Mentality: Always prioritizing clean code, intuitive interfaces, and responsive design in every project.",
+  "Continuous Learning: Constantly exploring new frameworks and tools to stay ahead of the curve in the ever-evolving tech landscape."
 ];
 
 export default function About() {

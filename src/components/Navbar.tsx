@@ -37,10 +37,10 @@ export default function Navbar() {
         {/* Logo mark */}
         <a href="#hero" className="flex items-center gap-3 group">
           <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[var(--gradient-start)] to-[var(--gradient-end)] flex items-center justify-center text-white text-xs font-black group-hover:scale-110 transition-transform duration-300">
-            H
+            J
           </div>
           <span className={`text-sm font-semibold tracking-wide transition-all duration-500 ${scrolled ? "text-[var(--foreground)]" : "text-[var(--foreground)]/80"}`}>
-            Hanif Maulana
+            John Doe
           </span>
         </a>
 

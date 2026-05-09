@@ -14,9 +14,9 @@ export default function Footer() {
         <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
           <a href="#hero" className="flex items-center gap-3 group">
             <div className="w-7 h-7 rounded-md bg-gradient-to-br from-[var(--gradient-start)] to-[var(--gradient-end)] flex items-center justify-center text-white text-[10px] font-black">
-              H
+              J
             </div>
-            <span className="text-sm font-semibold text-[var(--foreground)]">Hanif Maulana</span>
+            <span className="text-sm font-semibold text-[var(--foreground)]">John Doe</span>
           </a>
 
           <div className="flex items-center gap-6">
@@ -30,7 +30,7 @@ export default function Footer() {
 
         <div className="mt-8 pt-6 border-t border-[var(--border-custom)] text-center">
           <p className="text-xs text-[var(--muted)]">
-            &copy; {new Date().getFullYear()} Hanif Maulana. All rights reserved.
+            &copy; {new Date().getFullYear()} John Doe. All rights reserved.
           </p>
         </div>
       </div>
